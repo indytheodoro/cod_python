@@ -6,8 +6,8 @@ import os
 
 class Vendas(models.Models):
 
-    cliente = models.CharField(max_length=200, blank=False,)
-    produto = models.CharField(max_length=100, blank=False,)
+    cliente = models.CharField(max_length=200, blank=False)
+    produto = models.CharField(max_length=100, blank=False)
     data_compra = models.DateTimeField(default=timezone.now)
     valor_produto = models.FloatField(default=0.0)
     valor_divida =  models.FloatField(default=0.0)
